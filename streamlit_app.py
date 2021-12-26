@@ -9,7 +9,6 @@ API_Key = "AIzaSyDRuzgTAl1eFBKd5bpZ8MAqdIW-ThxYTG8"
 url = 'https://www.espn.com/'
 
 
-import urllib.request, json
 
 #Note that you can insert your URL with the parameter URL and you can also modify the device parameter if you would like to get the data for desktop.
 response = urllib.request.urlopen(url)

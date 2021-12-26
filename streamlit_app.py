@@ -4,6 +4,7 @@ import requests
 import json
 import csv
 from time import sleep
+import urllib.request
 
 API_Key = "AIzaSyDRuzgTAl1eFBKd5bpZ8MAqdIW-ThxYTG8"
 url = 'https://www.espn.com/'

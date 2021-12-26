@@ -1,7 +1,16 @@
 import streamlit as st
 import pandas as pd
-pip install https://github.com/adamcupial/lighthouse-python
-from lighthouse import LighthouseRunner
+import requests
+import json
+import csv
+from time import sleep
+
+API_Key = "AIzaSyDRuzgTAl1eFBKd5bpZ8MAqdIW-ThxYTG8"
+
+import pagespeed
+ps = pagespeed.PageSpeed()
+response = ps.analyse('https://www.espn.com', strategy='desktop')
+print(response.speed)
   
 
 st.write("SEO Project - Google Lighthouse Automation")

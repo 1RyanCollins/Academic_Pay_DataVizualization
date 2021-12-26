@@ -22,4 +22,4 @@ def get_pagespeed(API_Key, page_URL, baseURL, strategy):
  
 st.write("SEO Project - Google Lighthouse Automation")
 
-st.write(get_pagespeed)
+get_pagespeed()

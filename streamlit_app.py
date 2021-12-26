@@ -10,7 +10,7 @@ API_Key = "AIzaSyDRuzgTAl1eFBKd5bpZ8MAqdIW-ThxYTG8"
 url = 'https://www.espn.com/'
 
 
-pip install PythonPSI
+pip install git+FirePing32/PyPSI.git@main
 import PythonPSI
 PSI = PSI('google.com', category='seo', locale='en', strategy='desktop')
 

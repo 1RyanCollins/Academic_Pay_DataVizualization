@@ -11,15 +11,12 @@ url = 'https://www.espn.com/'
 
 
 
-#Note that you can insert your URL with the parameter URL and you can also modify the device parameter if you would like to get the data for desktop.
-response = urllib.request.urlopen(url)
-data = json.loads(response.read())  
-
-overall_score = data["lighthouseResult"]["categories"]["performance"]["score"] * 100
+from PythonPSI.api import PSI
+PSI = PSI('google.com', category='seo', locale='en', strategy='desktop')
 
 
  
 st.write("SEO Project - Google Lighthouse Automation")
-st.write(overall_score)
+st.write(PSI)
 
 

@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from lighthouse import LighthouseRunner
+import LighthouseRunner
   
 
 st.write("SEO Project - Google Lighthouse Automation")

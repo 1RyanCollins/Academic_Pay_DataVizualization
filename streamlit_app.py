@@ -6,20 +6,20 @@ import csv
 from time import sleep
 
 API_Key = "AIzaSyDRuzgTAl1eFBKd5bpZ8MAqdIW-ThxYTG8"
-base_URL = 'https://www.espn.com/'
-  
-def get_pagespeed(API_Key, page_URL, baseURL, strategy):
-    response_url = baseURL+page_URL+'&key='+API_Key+'&strategy='+strategy
-    response = requests.get(response_url)
-    json_data = response.json()
-    lighthouseResult = json_data["lighthouseResult"]
-    categories = lighthouseResult["categories"]
-    performance = categories["performance"]
-    score = performance["score"]
-    return (score*100)
-    sleep(1)
-    
+url = 'https://www.espn.com/'
+
+
+import urllib.request, json
+
+#Note that you can insert your URL with the parameter URL and you can also modify the device parameter if you would like to get the data for desktop.
+response = urllib.request.urlopen(url, key=API+Key)
+data = json.loads(response.read())  
+
+overall_score = data["lighthouseResult"]["categories"]["performance"]["score"] * 100
+
+
  
 st.write("SEO Project - Google Lighthouse Automation")
+st.write(overall_score)
 
-st.write(get_pagespeed())
+

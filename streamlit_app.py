@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import LighthouseRunner
+pip install https://github.com/adamcupial/lighthouse-python
+from lighthouse import LighthouseRunner
   
 
 st.write("SEO Project - Google Lighthouse Automation")

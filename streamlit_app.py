@@ -11,7 +11,7 @@ url = 'https://www.espn.com/'
 
 
 
-from PythonPSI.api import PSI
+import PythonPSI
 PSI = PSI('google.com', category='seo', locale='en', strategy='desktop')
 
 

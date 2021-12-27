@@ -5,6 +5,7 @@ import json
 import csv
 from time import sleep
 import requests
+git clone https://github.com/wention/BeautifulSoup4.git
 from bs4 import BeautifulSoup
 
 #get pagee

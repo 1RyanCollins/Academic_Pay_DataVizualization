@@ -1,18 +1,24 @@
+#import libraries
 import streamlit as st
 import pandas as pd
-import requests
 import json
 import csv
 from time import sleep
-
-  
 import requests
-URL = "https://www.geeksforgeeks.org/data-structures/"
-r = requests.get(URL)
+from bs4 import BeautifulSoup
 
+#get pagee
+page = requests.get("https://dataquestio.github.io/web-scraping-pages/simple.html")
 
+#print response code
+print(page)
+
+soup = BeautifulSoup(page.content, 'html.parser')
+
+#get title
+Title = soup.title
  
 st.write("SEO Project - Google Lighthouse Automation")
-st.write(r.content)
+st.write(Title)
 
 

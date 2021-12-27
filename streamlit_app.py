@@ -5,7 +5,7 @@ import json
 import csv
 from time import sleep
 import requests
-from bs4 import BeautifulSoup
+
 
 #get pagee
 page = requests.get("https://dataquestio.github.io/web-scraping-pages/simple.html")

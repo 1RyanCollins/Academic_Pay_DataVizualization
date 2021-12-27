@@ -4,19 +4,16 @@ import requests
 import json
 import csv
 from time import sleep
-import urllib.request
-
-API_Key = "AIzaSyDRuzgTAl1eFBKd5bpZ8MAqdIW-ThxYTG8"
-url = 'https://www.espn.com/'
-
-
-import https://github.com/FirePing32/PyPSI.git
-import PythonPSI
-PSI = PSI('google.com', category='seo', locale='en', strategy='desktop')
-
+import requests
+from bs4 import BeautifulSoup
+  
+URL = "http://www.values.com/inspirational-quotes"
+r = requests.get(URL)
+  
+soup = BeautifulSoup(r.content, 'html5lib') # If this line causes an error, run 'pip install html5lib' or install html5lib
 
  
 st.write("SEO Project - Google Lighthouse Automation")
-st.write(PSI)
+st.write(soup.prettify())
 
 

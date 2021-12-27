@@ -1,7 +1,6 @@
 import requests
 import pandas
-import requests_html
-from requests_html import HTMLSession
+
 
 try:
     session = HTMLSession()

@@ -1,7 +1,8 @@
 import requests
 import pandas
 import https://github.com/1RyanCollins/BeautifulSoup4.git
-from bs4 import BeautifulSoup
+easy_install beautifulsoup4
+from bs4 import beautifulsoup
 
 
 st.write("SEO Project - Google Lighthouse Automation")

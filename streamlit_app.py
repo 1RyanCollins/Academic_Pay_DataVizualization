@@ -5,7 +5,6 @@ import json
 import csv
 from time import sleep
 import requests
-pip install bs4
 from bs4 import BeautifulSoup
 
 #get pagee

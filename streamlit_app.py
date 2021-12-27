@@ -1,7 +1,7 @@
 import requests
-import install pandas
-import install regex
-import install urlparse4
+import pandas
+import regex
+import urlparse4
 import requests_html
 from requests_html import HTMLSession
 

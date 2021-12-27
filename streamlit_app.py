@@ -5,6 +5,7 @@ import json
 import csv
 from time import sleep
 import requests
+import BeautifulSoup
 
 
 #get pagee

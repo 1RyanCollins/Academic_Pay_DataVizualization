@@ -1,10 +1,11 @@
 import requests
 import pandas
-easy_install beautifulsoup4
-from bs4 import beautifulsoup
+from googlesearch import search
+x = search("Google")
 
 
 st.write("SEO Project - Google Lighthouse Automation")
+st.write(x)
 
 
 

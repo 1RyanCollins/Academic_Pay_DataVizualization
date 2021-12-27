@@ -4,7 +4,7 @@ import requests
 import json
 import csv
 from time import sleep
-from bs4 import BeautifulSoup
+
   
 import requests
 URL = "https://www.geeksforgeeks.org/data-structures/"

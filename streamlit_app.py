@@ -1,6 +1,6 @@
 import requests
 import pandas
-import GoogleSearch
+
 from googlesearch import search
 query = "Geeksforgeeks"
  

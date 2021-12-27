@@ -1,6 +1,5 @@
 import requests
 import pandas
-import urlparse4
 import requests_html
 from requests_html import HTMLSession
 

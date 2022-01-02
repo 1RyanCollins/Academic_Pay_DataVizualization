@@ -1,7 +1,6 @@
 import requests
 import pandas
 import streamlit as st
-st.title('Uber pickups in NYC')
 from bs4 import BeautifulSoup
 
 html_doc = """

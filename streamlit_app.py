@@ -6,8 +6,13 @@ from googlesearch import search
 
 
 #run a google search 
+#keyword
+
+#top10 results
 results = search("Google", num_results=10)
 
+
+#url
 url = "https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
 
 req = requests.get(url)

@@ -2,6 +2,7 @@ import requests
 import pandas
 import streamlit as st
 st.title('Uber pickups in NYC')
+from bs4 import BeautifulSoup
 
 html_doc = """
 <html><head><title>The Dormouse's story</title></head>
@@ -17,7 +18,7 @@ and they lived at the bottom of a well.</p>
 <p class="story">...</p>
 """
 
-from bs4 import BeautifulSoup
+
 soup = BeautifulSoup(html_doc)
 
 code = soup.prettify()

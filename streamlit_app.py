@@ -3,25 +3,18 @@ import pandas
 import streamlit as st
 from bs4 import BeautifulSoup
 
-html_doc = """
-<html><head><title>The Dormouse's story</title></head>
-<body>
-<p class="title"><b>The Dormouse's story</b></p>
+# scraping a wikipedia article
+url_link = 'https://www.geeksforgeeks.org/how-to-scrape-all-pdf-files-in-a-website/'
+request = requests.get(url_link)
+ 
+Soup = BeautifulSoup(request.text, 'lxml')
+ 
+# creating a list of all common heading tags
+heading_tags = ["h1", "h2", "h3"]
+for tags in Soup.find_all(heading_tags):
+    st.text((tags.name + ' -> ' + tags.text.strip()))
+    
 
-<p class="story">Once upon a time there were three little sisters; and their names were
-<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
-<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
-<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
-and they lived at the bottom of a well.</p>
-
-<p class="story">...</p>
-"""
-
-
-soup = BeautifulSoup(html_doc)
-
-code = soup.prettify()
-st.text(code)
 
 
 

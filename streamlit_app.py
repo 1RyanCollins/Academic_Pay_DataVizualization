@@ -17,7 +17,7 @@ from googlesearch import search
 
 #for item in results: 
 import requests
-page = requests.get("https://dataquestio.github.io/web-scraping-pages/simple.html")
+page = requests.get("https://en.wikipedia.org/wiki/List_of_dog_breeds")
 soup = BeautifulSoup(page.content, 'html.parser')
 title = soup.title
 

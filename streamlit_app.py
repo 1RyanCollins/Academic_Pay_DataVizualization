@@ -23,13 +23,13 @@ title = soup.title
 title = title.contents
 
 number_of_words = len(title)
-position = number_of_words.index("dog")+1
+position = number_of_words.index("dog")
 
 
    
 
 st.title("SEO Keyword Web App")
-st.text(type(position))
+st.text(position)
 
 
 

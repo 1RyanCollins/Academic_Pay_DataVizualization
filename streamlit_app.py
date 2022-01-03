@@ -16,7 +16,7 @@ from googlesearch import search
 
 
 #for item in results: 
-url = "https://www.bbc.com/culture/article/20210902-the-power-of-the-dog-a-five-star-brooding-melodrama"
+html = "https://www.bbc.com/culture/article/20210902-the-power-of-the-dog-a-five-star-brooding-melodrama"
 soup = BeautifulSoup(html, 'html.parser')
 title = soup.find("title")
 

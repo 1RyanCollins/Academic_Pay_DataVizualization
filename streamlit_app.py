@@ -16,8 +16,8 @@ from googlesearch import search
 
 
 #for item in results: 
-html = "https://en.wikipedia.org/wiki/List_of_dog_breeds"
-soup = BeautifulSoup(html, "html.parser")
+r = requests.get('https://en.wikipedia.org/wiki/List_of_dog_breeds')
+soup = BeautifulSoup(r.content, features="lxml")
 title = soup.find("title")
 
     

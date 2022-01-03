@@ -11,13 +11,16 @@ url_input = st.text_input("Enter your keyword")
 
 #top10 results
 results = []
-for j in search(url_input, tld="co.in", num=10, stop=10, pause=2):
-    results.append(j)
+
+#####code here to pull search results#######
 
 
 for item in results: 
     soup = BeautifulSoup(item, 'html.parser')
     title = soup.find("title")
+    ##h1 tags 
+    
+###determine position in results####
 
 st.title("SEO Keyword Web App")
 st.text(title)

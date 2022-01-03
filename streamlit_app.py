@@ -24,15 +24,14 @@ title = title.contents
 
 word_list = title.split()
 number_of_words = len(word_list)
-total_position = word_list.index("dog")+1)
-total
+position = word_list.index("one")+1
 
 #
     
 
 st.title("SEO Keyword Web App")
 
-st.text(total)
+st.text(position)
 
 
 

@@ -23,7 +23,7 @@ title = soup.title
 title = title.contents
 
 number_of_words = len(title)
-position = word_list.index("dog")+1
+position = number_of_words.index("dog")+1
 
 
    

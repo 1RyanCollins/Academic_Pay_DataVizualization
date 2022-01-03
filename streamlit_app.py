@@ -22,15 +22,14 @@ soup = BeautifulSoup(page.content, 'html.parser')
 title = soup.title 
 title = title.contents
 
-#word_list = title.split()
-#number_of_words = len(word_list)
-#position = word_list.index("one")+1
+number_of_words = len(title)
+position = word_list.index("dog")+1
 
-#
-    
+
+   
 
 st.title("SEO Keyword Web App")
-st.text(type(title))
+st.text(type(position))
 
 
 

@@ -19,7 +19,7 @@ from googlesearch import search
 import requests
 page = requests.get("https://en.wikipedia.org/wiki/List_of_dog_breeds")
 soup = BeautifulSoup(page.content, 'html.parser')
-title = soup.title
+title = soup.title.text()
 
     
 ###determine position in results####

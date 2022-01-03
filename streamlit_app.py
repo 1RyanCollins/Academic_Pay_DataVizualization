@@ -14,13 +14,15 @@ results = []
 for j in search(url_input, tld="co.in", num=10, stop=10, pause=2):
     results.append(j)
 
-#url
-url = "https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
 
-req = requests.get(url)
-soup = BeautifulSoup(req.content, 'html.parser')
+for item in results: 
+    req = requests.get(item)
+    soup = BeautifulSoup(req.content, 'html.parser')
+    st.text(req)
+
 st.title("SEO Keyword Web App")
-st.text(results)
+
+
 
 
 

@@ -30,6 +30,7 @@ title = title.contents
     
 
 st.title("SEO Keyword Web App")
+st.text(type(title))
 
 
 

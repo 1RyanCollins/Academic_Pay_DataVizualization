@@ -26,6 +26,7 @@ title = soup.find("title")
 st.title("SEO Keyword Web App")
 
 st.text(title)
+print(title)
 
 
 
